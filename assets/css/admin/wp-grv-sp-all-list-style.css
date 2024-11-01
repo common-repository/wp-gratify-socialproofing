@@ -1,0 +1,103 @@
+/*
+ * Style for all list page
+ *
+*/
+#wp_grv_all_rv_page_container{
+	margin-top: 35px;
+}
+.wp_grv_rv_edit_delete{
+	display: none;
+	position: absolute;
+	margin-left: 3%;
+}
+/* table title content style */
+.wp_grv_all_rv_title{
+	display: block;
+	margin-top: 15px;
+	text-align: left;
+}
+/* bin icon style */
+#wp_grv_rv_delete i.fa.fa-trash-o{
+	color: #bd0d00;
+}
+.wp_grv_rv_edit_delete i.fa.fa-pencil-square-o{
+	color: #10abd0;
+}
+#wp_grv_sp_all_rv_tbl{
+	text-align: center;
+	border-collapse: collapse;
+}
+#wp_grv_sp_all_rv_tbl tr{
+	background-color: #eaeaea;
+	border-bottom: solid 2px #615a5a36;
+}
+/* Style for table head */
+#wp_grv_sp_all_rv_tbl th,#wp_grv_sp_all_rv_tbl th{
+	background-color: #23282d;
+	color: #c3c1c1;
+}
+#wp_grv_all_rv_tbl_wrapper{
+	margin-right: 15px;
+}
+#wp_grv_sp_rv_ajax_reload #wp_grv_sp_all_rv_tbl_filter,#wp_grv_sp_rv_ajax_reload #wp_grv_sp_all_rv_tbl_length{
+	padding: 10px;
+}
+#rv_all_list select {
+	background-color: #e5e5e5;
+	border-radius: 4px;
+	color: #777;
+	margin-top: -3px;
+}
+#rv_all_list h2{
+	font-size: 25px;
+}
+#rv_all_list input[type=search]{
+	background-color: #e5e5e5;
+	border-radius: 4px;
+	color: #777;
+	padding: 4px;
+}
+/* for table */
+@media only screen and (max-width: 768px) {
+	#wp_grv_all_rv_tbl_wrapper{
+	margin-right: 0px;
+	}
+}
+@media only screen and (max-width: 760px) {
+	#rv_all_list .wp_grv_scroll_icon_border{
+		margin: 10px 0px 0px -1px !important;
+	}
+	#wp_grv_all_rv_tbl_filter{
+		float: left;
+		margin-top: 0%;
+	}
+	#wp_grv_all_rv_tbl_filter input[type=search]{
+		width: 98px;
+	}
+	#wp_grv_all_rv_tbl_length{
+		float: left;
+	}
+	#wp_grv_all_rv_tbl_length select{
+		width: 32%;
+	}
+}
+@media only screen and (max-width: 366px) {
+
+	#wp_grv_all_rv_tbl_filter{
+		float: left;
+		margin-top: 0%;
+	}
+	#wp_grv_all_rv_tbl_filter input[type=search]{
+		width: 76%;
+	}
+	#wp_grv_all_rv_tbl_length{
+		float: left;
+	}
+	#wp_grv_all_rv_tbl_length select{
+		width: 32%;
+	}
+}
+/* pagenation padding */
+div#wp_grv_all_rv_tbl_paginate {
+	padding: 10px;
+}

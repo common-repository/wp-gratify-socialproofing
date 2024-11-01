@@ -1,0 +1,122 @@
+/*
+ * Style for add new sp page
+ *
+*/
+#rv_add_new_page_container{
+  margin-top: 35px;
+}
+#rv_add_new_form{
+	  width: 100%;
+	display: block;
+}
+#rv_add_new_form .wp_grv_add_rv_label{
+	  width: 25%;
+	display: block;
+	float: left;
+	font-size: 15px;
+	font-weight: 700;
+}
+#rv_add_new_form input[type=text],#rv_add_new_form input[type=email],#rv_add_new_form textarea{
+	width: 50%;
+	display: block;
+}
+#rv_add_new_form select{
+	width: 50%;
+	display: block;
+}
+/* style for duplicate block */
+#wp_grv_duplicate_data_block{
+  display: none;
+  margin-top: 10px;
+}
+div#wp_grv_duplicate_check_section {
+  margin-bottom: 15px;
+}
+/* fields and label width for below 500px */
+@media only screen and (max-width: 500px) {
+  #rv_add_new_form .wp_grv_add_rv_label{
+	  width: 37%;
+	display: block;
+	float: left;
+	font-size: 15px;
+	font-weight: 700;
+  }
+  #rv_add_new_form input[type=text],#rv_add_new_form input[type=email],#rv_add_new_form textarea{
+	width: 60%;
+	display: block;
+  }
+  #rv_add_new_form select{
+	width: 60%;
+	display: block;
+  }
+  #rv_add_upload_usr_img_button{
+	margin-left: 37%;
+	margin-top: 2%;
+  }
+  #add_rv_img_upload_div{
+	margin-left: 38% !important;
+  }
+}
+#rv_add_usr_img {
+	float: left;
+}
+#add_rv_img_upload_div{
+	width: 20%;
+  margin-left: 26%;
+}
+/*
+ * style for ON OFF switch
+ *
+*/
+.wp_grv_add_rv_switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  float: left;
+}
+.wp_grv_add_rv_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.wp_grv_add_rv_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.wp_grv_add_rv_slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 10px;
+  bottom: 5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .wp_grv_add_rv_slider {
+  background-color: #2196F3;
+}
+input:focus + .wp_grv_add_rv_slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .wp_grv_add_rv_slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+/* Rounded sliders */
+.wp_grv_add_rv_slider.wp_grv_add_rv_round {
+  border-radius: 34px;
+}
+.wp_grv_add_rv_slider.wp_grv_add_rv_round:before {
+  border-radius: 50%;
+}

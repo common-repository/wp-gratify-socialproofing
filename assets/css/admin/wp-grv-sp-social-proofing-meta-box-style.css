@@ -1,0 +1,11 @@
+/*
+ * style for social proofing meta_box.
+ *
+*/
+#wp_grv_sp_socialproofing_meta h2.hndle.ui-sortable-handle {
+	background-color: #6c2db9;
+	color: #fff;
+}
+#wp_grv_sp_socialproofing_meta span.toggle-indicator {
+	color: #ffff;
+}
